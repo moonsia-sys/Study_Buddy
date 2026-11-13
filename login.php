@@ -28,6 +28,9 @@
     if (isset($_GET['status']) && $_GET['status'] == 'loggedout') {
         echo "<div class='msg ok'>You have been logged out.</div>";
     }
+    if (isset($_GET['status']) && $_GET['status'] == 'deleted') {
+        echo "<div class='msg ok'>Your account has been deleted.</div>";
+    }
     if (isset($_GET['error'])) {
         echo "<div class='msg err'>" . htmlspecialchars($_GET['error']) . "</div>";
     }

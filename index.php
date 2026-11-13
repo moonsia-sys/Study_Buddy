@@ -40,7 +40,7 @@
         <div class="row">
             <div class="field">
                 <label for="age">Age</label>
-                <input type="number" name="age" id="age" required>
+                <input type="number" name="age" id="age" min="15" max="100" required>
             </div>
             <div class="field">
                 <label for="gender">Gender</label>
@@ -55,12 +55,69 @@
 
         <div class="field">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email"  required>
+            <input type="email" name="email" id="email" required>
         </div>
 
         <div class="field">
             <label for="phone">Phone</label>
-            <input type="tel" name="phone" id="phone"  required>
+            <input type="tel" name="phone" id="phone" required>
+        </div>
+
+        <div class="row">
+            <div class="field">
+                <label for="course">Course you want a buddy for</label>
+                <select name="course" id="course" required>
+                    <option value="">Select course</option>
+                    <option>DSA</option>
+                    <option>DBMS</option>
+                    <option>C++</option>
+                    <option>OOP</option>
+                    <option>Web Programming</option>
+                    <option>Digital Logic</option>
+                    <option>Mathematics</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="studytime">Preferred study time</label>
+                <select name="studytime" id="studytime" required>
+                    <option value="">Select time</option>
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Evening</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="location">Preferred study location</label>
+            <select name="location" id="location" required>
+                <option value="">Select location</option>
+                <option>Library</option>
+                <option>Online</option>
+                <option>Campus Cafe</option>
+                <option>Dept. Lab</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <div class="field">
+                <label for="method">Preferred study method</label>
+                <select name="method" id="method" required>
+                    <option value="">Select method</option>
+                    <option>Group study</option>
+                    <option>One-on-one</option>
+                    <option>Flashcards &amp; quizzes</option>
+                    <option>Practice problems</option>
+                    <option>Video lectures</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="goals">Study goals</label>
+                <input type="text" name="goals" id="goals" placeholder="e.g. Pass the DSA final exam">
+            </div>
         </div>
 
         <div class="row">
@@ -81,7 +138,6 @@
 
         <div class="btn-row">
             <button class="btn" type="submit">Register</button>
-           
         </div>
 
     </form>

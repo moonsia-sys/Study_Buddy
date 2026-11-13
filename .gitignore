@@ -1,16 +1,16 @@
-# Environment / secrets
+# Environment secrets
 .env
 .env.*
 !.env.example
 
-# XAMPP / local files
-php_errorlog
+# Logs
 *.log
 
-# OS files
-Thumbs.db
-.DS_Store
-
-# IDE / editor
+# Editor files
 .vscode/
 .idea/
+
+# Operating system
+Thumbs.db
+.DS_Store
+study_buddy (1).sql
